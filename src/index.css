@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{ --card:#15161a; --muted:#d1d5db99; }
+.container{ @apply max-w-6xl mx-auto px-4; }
+.card{ @apply rounded-xl border border-neutral-800 bg-[var(--card)] p-6; }
+.btn{ @apply inline-block rounded-lg bg-brand px-4 py-2 font-medium text-white hover:brightness-110 transition; }
+.btn-outline{ @apply inline-block rounded-lg border border-neutral-700 px-4 py-2 hover:bg-neutral-800 transition; }
+.only-mobile{ @apply md:hidden; }
+nav a{ @apply hover:text-brand transition; }
+h1{@apply text-4xl md:text-5xl font-extrabold} h2{@apply text-2xl font-bold}
+.muted{ color: var(--muted); }
+.dropdown{ @apply relative }
+.dropdown-menu{ @apply absolute top-8 left-0 min-w-[220px] rounded-xl border border-neutral-800 bg-[var(--card)] p-2; }
+.dropdown-menu a{ @apply block px-3 py-2 hover:bg-neutral-800 rounded-lg; }
+/* Reveal animation */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.reveal-in { opacity: 1; transform: translateY(0); }
+
+/* PURE HOVER for dropdowns (no JS state needed) */
+
+/* Closed */
+.dropdown-menu {
+  /* position/shape already set earlier — we just enforce hover behavior */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity .15s ease, transform .15s ease, visibility 0s linear .15s;
+  pointer-events: none;    /* prevent flicker when closed */
+  top: 100%;
+  margin-top: 8px;         /* small visual offset, no gap */
+  z-index: 50;             /* above content */
+}
+
+/* Open on hover OR keyboard focus within the wrapper
+   NOTE: the slash in group/menu must be escaped in CSS as group\/menu */
+.dropdown.group\/menu:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;    /* show immediately */
+  pointer-events: auto;
+}
+
+/* Comfortable hit area for the label text so there’s no hover gap */
+.dropdown-trigger {
+  cursor: default;
+  user-select: none;
+  display: inline-block;
+  padding-top: .5rem;   /* py-2 */
+  padding-bottom: .5rem;
+}
+
