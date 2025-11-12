@@ -10,7 +10,7 @@ export default function Footer(){
           <p className="muted mt-2">“Where Logic ends, creativity begins.”</p>
           <div className="mt-3 muted">
             <div>(555) 555-1234</div>
-            <div>info@yourcompany.com</div>
+            <div>info@thelogicless.com</div>
           </div>
         </div>
 

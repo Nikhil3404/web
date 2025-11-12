@@ -22,9 +22,9 @@ export default function Contact(){
         <div className="grid gap-4">
           <div className="card">
             <div className="font-semibold">Company</div>
-            <div className="muted">info@yourcompany.com</div>
+            <div className="muted">info@thelogicless.com</div>
             <div className="muted">(555) 555-1234</div>
-            <div className="muted">123 Business Ave, Tech City, ST</div>
+            <div className="muted">212 N. 2ND ST. STE 100, RICHMOND KY 40475</div>
           </div>
           <div className="card">
             <iframe
@@ -35,7 +35,7 @@ export default function Contact(){
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=New%20York%2C%20NY&output=embed">
+              src="https://maps.app.goo.gl/YUFA3pVSWFPjcKrH8">
             </iframe>
           </div>
         </div>
