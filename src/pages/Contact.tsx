@@ -35,7 +35,7 @@ export default function Contact(){
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.app.goo.gl/YUFA3pVSWFPjcKrH8">
+              src="https://www.google.com/maps?q=212+N+2nd+St,+Richmond,+KY+40475&output=embed">
             </iframe>
           </div>
         </div>
