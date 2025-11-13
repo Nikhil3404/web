@@ -1,5 +1,7 @@
 import React from 'react'
 import Reveal from '@/components/Reveal'
+import { Link } from "react-router-dom";
+
 
 export default function Home(){
   return (
@@ -11,8 +13,9 @@ export default function Home(){
             <p className="muted mt-3 max-w-xl">because the best ideas aren't logical.</p>
             <p className="muted mt-3 max-w-xl">Data, Cloud, AI and full‑stack staffing—delivered with precision.</p>
             <div className="mt-6 flex gap-3">
-              <a href="/services" className="btn">Explore services</a>
-              <a href="/contact-us" className="btn-outline">Get in touch</a>
+              <Link to="/services" className="btn">Explore services</Link>
+              <Link to="/contact-us" className="btn-outline">Get in touch</Link>
+
             </div>
           </Reveal>
         </div>
