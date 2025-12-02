@@ -6,7 +6,10 @@ export default function Footer(){
     <footer className="border-t border-neutral-800 bg-black/60">
       <div className="container py-10 grid md:grid-cols-4 gap-6 text-sm">
         <div>
-          <div className="font-extrabold text-brand text-lg">TheLogicless</div>
+          <Link to="/home" className="font-extrabold text-brand text-xl">
+                    The Logicless
+                  </Link>
+
           <p className="muted mt-2">“Where Logic ends, creativity begins.”</p>
           <div className="mt-3 muted">
             <div>(555) 555-1234</div>
